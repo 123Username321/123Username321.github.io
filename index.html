@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .avatar-img {
+            display: block;
+            max-height: 250px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: inline-flex;
+            flex-direction: row;
+            width: auto;
+        }
+        .container > div > p {
+            margin: 4px 0 4px 0;
+        }
+        .container > div > h3 {
+            margin: 8px 0 8px 0;
+        }
+        .container > div > h4 {
+            margin: 16px 0 4px 0;
+        }
+        .container > div > ul {
+            padding-left: 20px;
+            margin: 6px 0 6px 0;
+        }
+        .container ul > li {
+            margin: 4px 0 4px 0;
+        }
+        .about {
+            margin-left: 12px;
+        }
+        @media (max-width: 991px) {
+            .container {
+                flex-direction: column;
+            }
+            .container > div {
+                text-align: center;
+            }
+            .container > div > ul {
+                text-align: left;
+            }
+            .about {
+                margin-left: 0px;
+            }
+            .avatar-img {
+                display: block;
+                max-width: 100%;
+                max-height: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="avatar.png" class="avatar-img">
+        <div class="about">
+            <h3>Плотников Андрей Алексеевич</h3>
+            <p>Дата рождения: 11 июля 1999</p>
+            <p>Место проживания: г. Липецк</p>
+            <p>Телефон: +7 (904) 284-04-06</p>
+            <h4>Список профессиональных навыков:</h4>
+            <ul>
+                <li>Backend разработка (PHP, NodeJS)</li>
+                <li>Frontend разработка (HTML, CSS, JS)</li>
+                <li>CEO (составление семантического ядра)</li>
+                <li>Просто хороший парень</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
